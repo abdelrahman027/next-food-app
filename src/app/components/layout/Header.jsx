@@ -1,19 +1,22 @@
 import Link from 'next/link'
 import React from 'react'
+import FilledButton from '../FilledButton'
 
-const Header = () => {
+export default function Header() {
     return (
-        <header className='flex items-center justify-between p-4'>
-            <Link className='text-orange-600 font-semibold text-lg' href={'/'}>PIZZA CHEEZE</Link>
-            <nav className='flex gap-4 text-slate-600 items-center'>
-                <Link className='hover:bg-slate-200 px-4 py-2 rounded-full text-orange-600' href={""}>Home</Link>
-                <Link className='hover:bg-slate-200 px-4 py-2 rounded-full' href={""}>Menu</Link>
-                <Link className='hover:bg-slate-200 px-4 py-2 rounded-full' href={""}>About</Link>
-                <Link className='hover:bg-slate-200 px-4 py-2 rounded-full' href={""}>Contacts</Link>
-                <Link className='bg-orange-600 text-white px-4 py-2 rounded-full hover:bg-orange-700 transition-all duration-200' href={""}>Login</Link>
+        <header className='flex items-center justify-between '>
+            <Link className='text-primary text-xl font-semibold' href="/">
+                Pizza Cheeze
+            </Link>
+            <nav className='flex gap-8 text-gray-500 items-center'>
+                <Link href='/'>Home</Link>
+                <Link href='/'>Menu</Link>
+                <Link href='/'>About</Link>
+                <Link href='/'>Contact</Link>
+                <FilledButton>
+                    <Link href='/'>Login</Link>
+                </FilledButton>
             </nav>
         </header>
     )
 }
-
-export default Header
