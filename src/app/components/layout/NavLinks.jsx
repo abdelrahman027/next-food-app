@@ -28,10 +28,11 @@ export default function () {
                     </button>
                     <Link href='/'>Home</Link>
                     <Link href='/'>Menu</Link>
-                    <Link href='/'>About</Link>
+                    <Link href='/about'>About</Link>
                     <Link href='/'>Contact</Link>
-                    <FilledButton>
-                        <Link href='/'>Login</Link>
+                    <FilledButton classes={'hover:bg-gray-300 transition-all'} >
+                        <Link className='hover:text-primary' href='/'>Login</Link>{" | "}
+                        <Link className='hover:text-primary' href='/'>Register</Link>
                     </FilledButton>
                 </nav>
             </div>
@@ -39,10 +40,11 @@ export default function () {
             <nav className='md:flex gap-8 hidden text-gray-500 items-center self-end '>
                 <Link href='/'>Home</Link>
                 <Link href='/'>Menu</Link>
-                <Link href='/'>About</Link>
+                <Link href='/about'>About</Link>
                 <Link href='/'>Contact</Link>
-                <FilledButton>
-                    <Link href='/'>Login</Link>
+                <FilledButton classes={'hover:bg-gray-300 transition-all'} >
+                    <Link className='hover:text-primary' href='/'>Login</Link>{" | "}
+                    <Link className='hover:text-primary' href='/'>Register</Link>
                 </FilledButton>
             </nav>
 
