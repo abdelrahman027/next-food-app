@@ -12,13 +12,13 @@ export default function Hero() {
                 <p className='my-4 text-gray-500 w-3/4 mx-auto md:w-auto'>
                     Pizza is the missing piece that makes every day complete, a simple yet delicious joy in life.
                 </p>
-                <div className='flex gap-4 items-center justify-center md:justify-start mt-12 text-sm'>
-                    <FilledButton classes={'flex gap-2 items-center'}>Order now <FaRegArrowAltCircleRight /></FilledButton>
+                <div className='flex gap-4 group items-center justify-center md:justify-start mt-12 text-sm'>
+                    <FilledButton classes={'flex gap-2 items-center'}>Order now <FaRegArrowAltCircleRight className='group-hover:animate-spin' /></FilledButton>
                     <button className='text-gray-500 font-semibold'>Learn more</button>
                 </div>
             </div>
             {/***************  HERO IMAGE ***************/}
-            <Image src={'/heroImage.png'} className='h-80 w-80 md:h-2/3 md:w-2/3 lg:w-auto lg:h-auto' alt='pizza' width={500} height={500} />
+            <Image src={'/heroImage.png '} className='h-80 w-80 md:h-2/3 md:w-2/3 lg:w-auto lg:h-auto' alt='pizza' width={500} height={500} />
         </section>
     )
 }

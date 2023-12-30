@@ -43,8 +43,8 @@ export default function () {
                 <Link href='/about'>About</Link>
                 <Link href='/'>Contact</Link>
                 <FilledButton classes={'hover:bg-gray-300 transition-all'} >
-                    <Link className='hover:text-primary' href='/'>Login</Link>{" | "}
-                    <Link className='hover:text-primary' href='/'>Register</Link>
+                    <Link className='hover:text-primary' href='/login'>Login</Link>{" | "}
+                    <Link className='hover:text-primary' href='/register'>Register</Link>
                 </FilledButton>
             </nav>
 
