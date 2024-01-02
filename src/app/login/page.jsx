@@ -3,11 +3,12 @@ import React from 'react';
 import { FcGoogle } from "react-icons/fc";
 import InputField from '../components/InputField';
 import FilledButton from '../components/FilledButton';
+import Link from 'next/link';
 
 
 const Login = () => {
     return (
-        <section className='reletive'>
+        <section className='reletive h-screen'>
             <div className='absolute -z-10 top-0 left-[50%] opacity-75'>
                 <Image src={'/pepper.png'} width={500} height={500} alt='pizza' />
             </div>
@@ -26,6 +27,9 @@ const Login = () => {
                     <FcGoogle className='h-5 w-5' />
                     Google
                 </button>
+                <div className='text-sm'>
+                    New to our Community ? <Link className='hover:underline text-primary' href={'/register'} >Sign up</Link>
+                </div>
             </div>
         </section>
     )
